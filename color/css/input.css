@@ -16,12 +16,19 @@ body {
   background-color: #1f242d;
   color: #ecf0f1;
 }
+body.dark-mode {
+  background-color: #1a1a1a;
+  color: #e0e0e0;
+}
+.dark-mode .bg-light {
+  background-color: #333333;
+}
+.dark-mode .text-light {
+  color: #e0e0e0;
+}
 
 .header {
  
-    
-    
-    
     padding: 20px 10%;
    
 }
@@ -100,7 +107,8 @@ opacity: 0;
 
 .home-img img {
  
- 
+ width: 100%;
+ height: auto;
   opacity: 0;
   animation: zoomIn 1s ease forwards, flotImage 4s ease-in-out infinite;
   animation-delay: 2s, 3s;
