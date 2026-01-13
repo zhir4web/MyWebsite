@@ -1,207 +1,30 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Zhir portfolio</title>
 
-    <!-- box icons -->
-    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- custom css -->
-    <link rel="stylesheet" href="css/style.css" />
-  </head>
+  <!-- SEO Meta Tags -->
+  <title>Zhir Jalal | Frontend Developer & UI Designer</title>
+  <meta name="description"
+    content="Portfolio of Zhir Jalal, a professional Frontend Developer and Computer Science student specializing in building modern, responsive, and high-performance web applications." />
+  <meta name="keywords" content="Frontend Developer, Zhir Jalal, React Developer, Web Design, Portfolio, Sulaimani" />
+  <meta name="author" content="Zhir Jalal" />
 
-  <body>
-    <!-- header design -->
-     <header class="header">
-      <a href="#" class="logo">portfolio</a>
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Zhir Jalal | Frontend Developer & UI Designer" />
+  <meta property="og:description" content="Explore my projects and services in web development and design." />
+  <meta property="og:image" content="/images/zhir.png" />
 
-      <i class='bx bx-menu' id="menu-icon"></i>
-      <nav class="navbar">
-        <a href="#home" class="active">Home</a>
-        <a href="#about">about</a>
-        <a href="#services">services</a>
-        <a href="#portfolio">portfolio</a>
-        <a href="#contact">contact</a>
-      </nav>
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+</head>
 
-     </header>
+<body>
+  <div id="root"></div>
+  <script type="module" src="/src/main.jsx"></script>
+</body>
 
-    <!-- home section design -->
-<section class="home" id="home" >
-  <div class="home-content">
-    <h3>Hello,It's Me</h3>
-    <h1>zhir jalal</h1>
-    <h3>And I'm a <span class="multiple-text"></span></h3>
-    <p>Hi! I'm Zhir, a 24-year-old frontend developer and computer
- science student from Sulaimani. I specialize in HTML, CSS,
- JavaScript, Java, Tailwind and Bootstrap. With one year left to
- graduate, I'm focused on building clean, responsive web apps.
- I’m passionate about improving my programming skills and
- growing as a developer.</p>
-       <div class="social-media">
-        <a href="https://www.facebook.com/zhir.jalal.0" style="--i:7;"><i class="bx bxl-facebook"></i></a>
-        <a href="https://www.tiktok.com/@zhir4?_t=8pzSnwkETfr&_r=1" style="--i:8;"><i class='bx bxl-tiktok'></i></a>
-        <a href="https://www.linkedin.com/in/zhir-jalal-8aa579328/" style="--i:9;"><i class='bx bxl-linkedin'></i></a>
-        <a href="https://github.com/zhir4web" style="--i:10;"><i class='bx bxl-github'></i></a>
-    </div>
-    <a href="assets\zhirjalal.pdf" class="btn  ">Download CV</a>
-</div>
-<div class="home-img  ">
-    <img src="images/zhir.png" alt="">
-</div>
-
-</section>
-    <!-- about section design -->
-<section class="about" id="about">
-  <div class="about-img">
-
-    <img src="images/zhir.png" alt="">
-
-  </div>
-
-  <div class="about-content">
-    <h2 class="heading ">About <span>Me</span></h2>
-    <h3>Frontend Developer</h3>
-    <p> Hi there, welcome to my website! I'm zhir,
-      a passionate web developer who enjoys learning new technologies
-      and solving problems with code!</p>
-       <a href="#" class="btn">Read More</a>
-  </div>
-</section>
-    <!-- services section design -->
-<section class="services" id="services">
-  <h2 class="heading">Our <span>services</span></h2>
-  <div class="services-container">
-  <div class="services-box">
-    <i class='bx bx-code-alt'></i>
-    <h3>Web Development</h3>
-    <p>Built responsive websites using HTML, CSS, JavaScript, Tailwind, and Bootstrap.
-      Collaborated with clients to design clean, user-friendly interfaces.
-      Managed projects independently and delivered on time.
-     Gained real-world experience in Git, GitHub, and problem solving.</p>
-       <a href="#" class="btn">Read More</a>
-  </div>
-
-  <div class="services-box">
-    <i class='bx bxs-paint'></i>
-    <h3>Graphic Design</h3>
-    <p>Designed clean, modern visuals for social media posts, ads, and stories.
-Used Canva, figma for branding and content creation.
-Created custom designs for Instagram shops.
-Focused on minimalist and engaging design for digital platforms.
-</p>
-       <a href="#" class="btn">Read More</a>
-  </div>
-
-  <div class="services-box">
-    <i class='bx bx-bar-chart-alt'></i>
-    <h3>Social Media</h3>
-    <p>Promoted and sold products through platforms like Instagram, Facebook, and Tiktok. 
-      Created engaging posts, stories, and ads to attract customers and boost sales.
-       Managed customer communication, handled orders, and built trust with online buyers.</p>
-       <a href="#" class="btn">Read More</a>
-  </div>
-</div>
-</section>
-    <!-- portfolio section design -->
- <section class="portfolio" id="portfolio">
-  <h2 class="heading">Letest <span>Project</span></h2>
-  <div class="portfolio-container">
-  <div class="portfolio-box">
-    <img src="images/portfolio1.jpg" alt="">
-    <div class="portfolio-layer">
-      <h4>Shoppe</h4>
-      <p>Creating My First Website </p>
-<a href="https://zhir4web.github.io/zhir/zhir.html"><i class="bx bx-link-external"></i></a>
-    </div>
-  </div>
-
-  <div class="portfolio-box">
-    <img src="images/portfolio2.jpg" alt="">
-    <div class="portfolio-layer">
-      <h4>Create System Kaftrya</h4>
-      <p>It is a Small System For Kaftrya  and a Temporary Database</p>
-       <a href="https://zhir4web.github.io/Cashier-System-for-Kaftrya/zewe.html"><i class="bx bx-link-external"></i></a>
-    </div>
-  </div>
-
-  <div class="portfolio-box">
-    <img src="images/portfolio3.jpg" alt="">
-    <div class="portfolio-layer">
-      <h4>Create Login and Register</h4>
-      <p>Drwst krdny Login and Register ba Sheweky zor jwan.</p>
-<a href="https://zhir4web.github.io/Login-and-Register/"><i class="bx bx-link-external"></i></a>
-    </div>
-  </div>
-
-  <div class="portfolio-box">
-    <img src="images/portfolio4.jpg" alt="">
-    <div class="portfolio-layer">
-      <h4>Writing Quickly</h4>
-      <p>Create a simple game called Quick Writing in html, CSS and JavaScripts</p>
-<a href="https://zhir4web.github.io/Writing-Quickly/index.html"><i class="bx bx-link-external"></i></a>
-    </div>
-  </div>
-
-  <div class="portfolio-box">
-    <img src="images/portfolio5.jpg" alt="">
-    <div class="portfolio-layer">
-      <h4>POS System</h4>
-      <p>Create a POS System for Fast food </p>
-<a href="https://zhir4web.github.io/Pos/#/pos"><i class="bx bx-link-external"></i></a>
-    </div>
-  </div>
-
-  <div class="portfolio-box">
-    <img src="images/portfolio6.jpg" alt="">
-    <div class="portfolio-layer">
-      <h4>Web Design</h4>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-        Fugit tempore</p>
-<a href="#"><i class="bx bx-link-external"></i></a>
-    </div>
-  </div>
-</div>
- </section>
-    <!-- contact section design -->
- <section class="contact" id="contact">
-  <h2 class="heading">Contact <span>Me!</span></h2>
-
-  <form action="#">
-    <div class="input-box">
-      <input type="text" placeholder="Full Name">
-      <input type="email" placeholder="Email Address">
-    </div>
-    <div class="input-box">
-      <input type="number" placeholder="Mobile Number">
-      <input type="text" placeholder="Email Subject">
-    </div>
-    <textarea name="" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
-    <input type="submit" value="Send Message" class="btn">
-  </form>
-
- </section>
-    <!-- footer design -->
-<footer class="footer">
-  <div class="footer-text">
-    <p>Copyright &copy; 2024 by zhir jalal | All Rights reserved</p>
-  </div>
-
-  <div class="footer-iconTop">
-    <a href="#home"><i class='bx bx-up-arrow-alt'></i></a>
-  </div>
-</footer>
-
-    <!-- scroll reveal -->
-    <script src="https://unpkg.com/scrollreveal"></script>
-
-    <!-- typed js -->
-    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
-    <!-- custom js -->
-    <script src="js/script.js"></script>
-  </body>
 </html>
-
