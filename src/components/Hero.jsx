@@ -73,11 +73,12 @@ const Hero = () => {
                 </div>
 
                 <motion.a
-                    href="/assets/zhirjalal.pdf"
+                    href="./assets/zhirjalal.pdf"
                     className="btn"
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}
                     transition={{ delay: 1.2 }}
+                    download
                 >
                     Download CV
                 </motion.a>
@@ -89,12 +90,16 @@ const Hero = () => {
                 animate={{ opacity: 1, scale: 1 }}
                 transition={{ duration: 0.8, delay: 0.5 }}
             >
-                <motion.img
-                    src="/images/zhir.png"
-                    alt="Zhir Jalal"
-                    animate={{ y: [0, -20, 0] }}
+                <motion.div 
+                    className="home-img-wrapper"
+                    animate={{ y: [0, -15, 0] }}
                     transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
-                />
+                >
+                    <img
+                        src="./images/zhir.png"
+                        alt="Zhir Jalal"
+                    />
+                </motion.div>
             </motion.div>
 
             <style jsx>{`
@@ -138,9 +143,34 @@ const Hero = () => {
           color: var(--main-color);
           transition: 0.3s ease;
         }
-        .home-img img {
-          width: 35vw;
-          filter: drop-shadow(0 0 20px var(--main-color));
+        .home-img {
+          position: relative;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+        .home-img-wrapper {
+          position: relative;
+          width: 32vw;
+          max-width: 360px;
+          min-width: 260px;
+          aspect-ratio: 3/4;
+          border-radius: 2.5rem;
+          overflow: hidden;
+          border: 3px solid rgba(56, 189, 248, 0.4);
+          box-shadow: 0 0 35px rgba(56, 189, 248, 0.35), 0 0 70px rgba(129, 140, 248, 0.2);
+          transition: 0.4s ease;
+        }
+        .home-img-wrapper:hover {
+          border-color: var(--main-color);
+          box-shadow: 0 0 45px rgba(56, 189, 248, 0.55), 0 0 90px rgba(129, 140, 248, 0.35);
+          transform: translateY(-5px);
+        }
+        .home-img-wrapper img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          object-position: center top;
         }
 
         @media (max-width: 768px) {
@@ -158,8 +188,9 @@ const Hero = () => {
           .social-media {
             justify-content: center;
           }
-          .home-img img {
+          .home-img-wrapper {
             width: 70vw;
+            max-width: 320px;
           }
         }
       `}</style>

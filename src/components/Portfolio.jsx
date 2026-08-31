@@ -5,37 +5,37 @@ import { ExternalLink } from 'lucide-react';
 const Portfolio = () => {
     const projects = [
         {
-            img: '/images/portfolio1.jpg',
+            img: './images/portfolio1.jpg',
             title: 'Shoppe',
             desc: 'Creating My First Website',
             link: 'https://zhir4web.github.io/zhir/zhir.html'
         },
         {
-            img: '/images/portfolio2.jpg',
+            img: './images/portfolio2.jpg',
             title: 'System Kaftrya',
             desc: 'Cashier system with temporary database',
             link: 'https://zhir4web.github.io/Cashier-System-for-Kaftrya/zewe.html'
         },
         {
-            img: '/images/portfolio3.jpg',
+            img: './images/portfolio3.jpg',
             title: 'Login & Register',
             desc: 'Secure and beautiful authentication UI',
             link: 'https://zhir4web.github.io/Login-and-Register/'
         },
         {
-            img: '/images/portfolio4.jpg',
+            img: './images/portfolio4.jpg',
             title: 'Writing Quickly',
             desc: 'Typing speed game built with JS',
             link: 'https://zhir4web.github.io/Writing-Quickly/index.html'
         },
         {
-            img: '/images/portfolio5.jpg',
+            img: './images/portfolio5.jpg',
             title: 'POS System',
             desc: 'Fast food point of sale system',
             link: 'https://zhir4web.github.io/Pos/#/pos'
         },
         {
-            img: '/images/portfolio6.jpg',
+            img: './images/portfolio6.jpg',
             title: 'Web Design',
             desc: 'Modern web interface exploration',
             link: '#'

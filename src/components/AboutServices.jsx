@@ -12,7 +12,9 @@ export const About = () => {
                 viewport={{ once: true }}
                 transition={{ duration: 0.6 }}
             >
-                <img src="/images/zhir.png" alt="About Zhir" />
+                <div className="about-img-wrapper">
+                    <img src="./images/zhir.png" alt="About Zhir" />
+                </div>
             </motion.div>
 
             <motion.div
@@ -29,7 +31,7 @@ export const About = () => {
                     who enjoys learning new technologies and solving problems with code!
                     I focus on creating high-quality, user-friendly experiences.
                 </p>
-                <a href="#" className="btn">Read More</a>
+                <a href="#contact" className="btn">Get In Touch</a>
             </motion.div>
 
             <style jsx>{`
@@ -40,9 +42,34 @@ export const About = () => {
           gap: 4rem;
           background: var(--second-bg-color);
         }
-        .about-img img {
-          width: 35vw;
-          filter: drop-shadow(0 0 15px rgba(0,0,0,0.5));
+        .about-img {
+          position: relative;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+        .about-img-wrapper {
+          position: relative;
+          width: 30vw;
+          max-width: 350px;
+          min-width: 250px;
+          aspect-ratio: 3/4;
+          border-radius: 2.5rem;
+          overflow: hidden;
+          border: 3px solid rgba(56, 189, 248, 0.4);
+          box-shadow: 0 0 35px rgba(56, 189, 248, 0.3), 0 0 70px rgba(129, 140, 248, 0.15);
+          transition: 0.4s ease;
+        }
+        .about-img-wrapper:hover {
+          border-color: var(--main-color);
+          box-shadow: 0 0 45px rgba(56, 189, 248, 0.5);
+          transform: translateY(-5px);
+        }
+        .about-img-wrapper img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          object-position: center top;
         }
         .about-content h2 {
           text-align: left;
@@ -67,8 +94,9 @@ export const About = () => {
           .about-content h2 {
             text-align: center;
           }
-          .about-img img {
+          .about-img-wrapper {
             width: 70vw;
+            max-width: 320px;
           }
         }
       `}</style>
